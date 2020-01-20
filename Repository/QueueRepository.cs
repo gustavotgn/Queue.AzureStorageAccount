@@ -75,6 +75,10 @@ namespace Queue.Repository
         private string GetConnection()
         {
             var connection = _configuration.GetSection("Values:AzureWebJobsStorage").Value;
+            if (connection == null)
+            {
+                throw new ArgumentException("Configuration can not be null");
+            }
             return connection;
         }
     }
