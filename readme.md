@@ -3,12 +3,13 @@
 
 //To use, Add to Configuration file:
 
-{
-	"Values": {
-		"AzureWebJobsStorage": "QueueConnectionString",
-		"FUNCTIONS_WORKER_RUNTIME": "dotnet"
-	
-}
+
+        {
+		"Values": {
+			"AzureWebJobsStorage": "QueueConnectionString",
+			"FUNCTIONS_WORKER_RUNTIME": "dotnet"
+	}
+
 
 //Replace 'QueueConnectionString' with the Azure Storage Account connection string
 
