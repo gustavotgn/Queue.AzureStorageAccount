@@ -74,7 +74,7 @@ namespace Queue.Repository
 
         private string GetConnection()
         {
-            var connection = _configuration.GetSection("AzureWebJobsStorage").Value;
+            var connection = _configuration.GetSection("Values:AzureWebJobsStorage").Value;
             return connection;
         }
     }
